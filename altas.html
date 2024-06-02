@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<title>Registro de la Compra</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<link rel="stylesheet" type="text/css" href="css/estilos2.css">
+		<link rel="shortcut icon" href="imagenes/logo.png" type="image/x-icon">
+	</head>
+	<body>
+		<header>
+			<div class="imagenlogin">
+				<img src="imagenes/logosparkle.png">
+			</div>
+			<div class="textologin">
+				<h2>Saló de Fiestas SPARKLE</h2>
+				<h4>Registro de tu Compra</h4>
+			</div>
+		</header>
+		<hr>
+		<main class="admin">
+			<nav>
+				<table class="menu">
+					<tr>
+						<td class="opcion"><a href="#">Altas</a></td>
+						<td class="opcion"><a href="index.html">Salir</a></td>
+					</tr>
+				</table>
+			</nav>
+			<section>
+				<form class="formaltas" method="POST" action="altas.php" autocomplete="off">
+					<label for="">Altas Administrativa</label>
+					<div class="input-grupo">
+						<div class="input-contenedor">
+							<img src="imagenes/clave.png" alt="">
+							<input type="text" name="clave" placeholder="Ingrese la clave de Administrador" required>
+						</div>
+						<div class="input-contenedor">
+							<img src="imagenes/usuario.png" alt="">
+							<input type="text" name="nombre" placeholder="Escriba su nombre completo" required>
+						</div>
+						<div class="input-contenedor">
+							<img src="imagenes/direccion.png" alt="">
+							<input type="text" name="direccion" placeholder="Escriba su direccion" required>
+						</div>
+						<div class="input-contenedor">
+							<img src="imagenes/telefono.png" alt="">
+							<input type="text" name="telefono" placeholder="Escriba su telefono" required>
+						</div>
+						<div class="input-contenedor">
+							<img src="imagenes/correo.png" alt="">
+							<input type="email" name="correo" placeholder="Escriba su e-mail" required>
+						</div>
+						<div class="input-contenedor">
+							<img src="imagenes/tipopago.png" alt="">
+							<select name="pago">
+								<option value="efectivo">Efectivo</option>
+								<option value="transferencia">Transferencia</option>
+								<option value="banco">Deposito Bancario</option>
+							</select>
+						</div>
+						<div class="input-contenedor">
+							<img src="imagenes/comentario.png" alt="">
+							<textarea cols="30" rows="3" name="motivo" placeholder="Motivo del Alta" required></textarea>
+						</div>
+						<div class="input-contenedor">
+								<input type="reset" value="Borrar"><td align="center"></td>
+								<input type="submit" value="Enviar">
+						</div>
+					</div>
+				</form>
+			</section>
+		</main>
+		<footer>
+			<div class="contenedor-footer">
+				<div class="content-foo">
+					<h4>Teléfono</h4>
+					<p>5698765431</p>
+				</div>
+				<div class="content-foo">
+					<h4>Correo electrónico</h4>
+					<p>contactoempresa@mimatrix.net.mx</p>
+				</div>
+				<div class="content-foo">
+					<h4>Dirección</h4>
+					<p>Avenida Las Palmas 1024-B</p>
+				</div>
+			</div>
+			<h2 class="titulo-final">&copy; Hernandez Paredes - Casarreal Rodríguez</h2>
+		</footer>
+	</body>
+</html>
